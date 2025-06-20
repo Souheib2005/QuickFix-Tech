@@ -4,7 +4,12 @@ function Home() {
   return (
     <div className="container">
       <header>
-<img src="/quickfix.png" alt="QuickFix Tech Logo" style={{ height: "120px" }} />
+<img
+  src={`${import.meta.env.BASE_URL}quickfix.png`}
+  alt="QuickFix Tech Logo"
+  style={{ height: "40px", width: "auto", marginRight: "10px" }}
+/>
+
         <nav>
           <a href="#">Home</a>
           <a href="#services">Services</a>
@@ -23,19 +28,19 @@ function Home() {
         <h2>Our Services</h2>
         <div className="cards">
           <div className="card">
-            <img src="/phone.jpg" alt="Phone" />
+            <img src={`${import.meta.env.BASE_URL}phone.jpg`} alt="Phone" />
             <h3>Phone Repair</h3>
             <p>Cracked screens, battery swaps</p>
             <p>$50</p>
           </div>
           <div className="card">
-            <img src="/tablet.jpg" alt="Tablet" />
+            <img src={`${import.meta.env.BASE_URL}tablet.jpg`} alt="Tablet" />
             <h3>Tablet Repair</h3>
             <p>iPads, Android tablets</p>
             <p>$60</p>
           </div>
           <div className="card">
-            <img src="/laptop.jpg" alt="Laptop" />
+            <img src={`${import.meta.env.BASE_URL}laptop.jpg`} alt="Laptop" />
             <h3>Laptop Repair</h3>
             <p>Screen & keyboard fixes</p>
             <p>$80</p>
